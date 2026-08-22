@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+
+
+
+nav {
+    height: 75px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #050505;
+    border-bottom: 1px solid #292929;
+}
+
+.logo {
+    color: #e2a928;
+    border: 1px solid #d99a20;
+
+    padding: 9px 13px;
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.links a:hover,
+.links .active {
+    color: #e2a928;
+}
+
+
+
+
+#projects {
+    min-height: calc(100vh - 75px);
+    padding: 70px 7%;
+}
+
+.heading {
+    color: #d99a20;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+h1 span {
+    color: #d99a20;
+}
+
+.line {
+    width: 60px;
+    height: 3px;
+    background: #d99a20;
+    margin-bottom: 45px;
+}
+
+
+
+
+.project-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    padding: 35px;
+
+    background: #111;
+
+    border: 1px solid #5b430e;
+    border-radius: 14px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #e2a928;
+    box-shadow: 0 10px 30px rgba(226,169,40,0.15);
+}
+
+
+
+
+.icon {
+    min-width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #e2a928;
+    border-radius: 50%;
+
+    font-size: 42px;
+}
+
+
+
+
+.project-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    color: #e2a928;
+    font-size: 13px;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .project-box {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

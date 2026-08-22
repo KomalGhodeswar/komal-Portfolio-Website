@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+
+
+
+nav {
+    height: 75px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #050505;
+    border-bottom: 1px solid #292929;
+}
+
+.logo {
+    background: #c98905;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.links a:hover,
+.links .active {
+    color: #e2a928;
+}
+
+
+
+
+#skills {
+    padding: 70px 7%;
+    min-height: calc(100vh - 75px);
+}
+
+.heading {
+    color: #d99a20;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+h1 span {
+    color: #d99a20;
+}
+
+.title-line {
+    width: 60px;
+    height: 3px;
+    background: #d99a20;
+    margin-bottom: 45px;
+}
+
+
+
+
+.skills-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    height: 220px;
+    background: #111;
+    border: 1px solid #4b3919;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    border-color: #d99a20;
+}
+
+.skill-icon {
+    width: 90px;
+    height: 90px;
+
+    border: 2px solid #d99a20;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e2a928;
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.skill-icon i {
+    color: #e2a928;
+}
+
+.skill-icon:has(.fa-python) i {
+    color: #e2a928;
+}
+
+.skill-card h2 {
+    font-size: 20px;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .skills-box {
+        grid-template-columns: 1fr;
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    #skills {
+        padding: 50px 6%;
+    }
+}
