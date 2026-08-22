@@ -52,7 +52,7 @@ nav {
     color: #e2a928; 
 } 
  
-#home { 
+#index { 
     min-height: calc(100vh - 75px); 
     padding: 60px 7%; 
     display: flex; 
@@ -201,7 +201,7 @@ nav {
  
 @media (max-width: 1100px) { 
  
-    #home { 
+    #index { 
         padding: 50px 5%; 
         gap: 35px; 
     } 
@@ -235,7 +235,7 @@ nav {
         gap: 15px; 
     } 
  
-    #home { 
+    #index { 
         min-height: auto; 
         padding: 60px 5%; 
         flex-direction: column; 
